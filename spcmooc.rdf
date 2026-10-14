@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hafizan/ontologies/2024/4/untitled-ontology-33/"
+     xml:base="http://www.semanticweb.org/hafizan/ontologies/2024/4/untitled-ontology-33/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#belong_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#belong_to">
+        <rdfs:comment>belong_to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#enrols -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#enrols">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course"/>
+        <rdfs:comment>enrols</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#has_cohort -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#has_cohort">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course"/>
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort"/>
+        <rdfs:comment>has_cohort</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#has_count -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#has_count">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Participationcount"/>
+        <rdfs:comment>has_count</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#has_moocassessment -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#has_moocassessment">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+        <rdfs:comment>has_assessment</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#has_moocdetail -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#has_moocdetail">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#is_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#is_a">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Person"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#moocs_offer -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#moocs_offer">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#University"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#CertificateID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#CertificateID"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Comments -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Comments"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Completiondate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Completiondate"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Enrolmentdate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Enrolmentdate"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz1"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz2"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz3"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz1"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz2"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz3"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L3Quiz -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L3Quiz"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L4Quiz -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L4Quiz"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz1"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz2"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz3"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz1"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz2"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz3"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#LearnerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#LearnerName"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise1"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise2"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise3"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#ProfileName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#ProfileName"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Progress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Progress"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Test1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Test1"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Test2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Test2"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Timespent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Timespent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course"/>
+        <rdfs:comment>Assessment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#University"/>
+        <rdfs:comment>Course</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Participationcount -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Participationcount">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOC_course"/>
+        <rdfs:comment>Participationcount</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Person -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Person">
+        <rdfs:comment>Person</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Student -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Student">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Person"/>
+        <rdfs:comment>Student</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#University -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#University">
+        <rdfs:comment>University</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#CertificateID -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#CertificateID">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Comments -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Comments">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Participationcount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Completiondate -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Completiondate">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Enrolmentdate -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Enrolmentdate">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz1">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz2">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L1Quiz3">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz1">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz2">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L2Quiz3">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L3Quiz -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L3Quiz">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L4Quiz -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L4Quiz">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz1">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz2">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L5Quiz3">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz1">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz2">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#L6Quiz3">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#LearnerName -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#LearnerName">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise1">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise2">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#PExercise3">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#ProfileName -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#ProfileName">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Progress -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Progress">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Test1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Test1">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Test2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Test2">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Timespent -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Timespent">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#MOOCEnroldetail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcmooc#Cohort">
+        <rdfs:comment>Cohort</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
